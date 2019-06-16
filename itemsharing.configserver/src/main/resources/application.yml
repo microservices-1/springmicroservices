@@ -6,9 +6,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/springmicro/config-repo
-          username: springmicro
-          password: password123
-          search-paths: userservice, itemservice
-        encrypt:
-          enabled: false
+          clone-on-start: true
+          force-pull: true
+          uri: https://github.com/microservices-1/config-repo-new.git
+          username: "Uhbyxer"
+          password: "{cipher}18d4d4812cef498f269ea1f513f4f1c29ae59536c237de14c408f855c5d2d269"
+          search-paths: userservice, itemservice, zuulservice, authorizationservice
